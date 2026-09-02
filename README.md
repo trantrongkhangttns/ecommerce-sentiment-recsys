@@ -5,7 +5,9 @@
 This project was developed to build an end-to-end Machine Learning solution that addresses core e-commerce challenges: extracting actionable insights from unstructured customer feedback and personalizing product discovery.
 The models were trained and evaluated on a custom dataset of approximately 13,490 authentic Vietnamese reviews scraped directly from Shopee.
 ![Demo](assets/demo.png)
-<!-- TODO: Insert a demo image/gif of the dashboard into the assets/ folder and update the path above. -->
+
+<img width="1856" height="1042" alt="image" src="https://github.com/user-attachments/assets/83228693-2728-4911-aaaf-41a2e6eca311" />
+
 
 ---
 
