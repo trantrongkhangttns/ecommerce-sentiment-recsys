@@ -47,19 +47,19 @@ As a result, the accompanying web application and backend gateway are implemente
 - **Interactive Product Search & Interaction Logging:** A storefront simulation that allows administrators to search the product catalog and view details. It actively logs simulated user behaviors (e.g., `click_view` events tied to a `User_ID`) to dynamically feed the implicit feedback matrix required by the ALS recommendation engine.
 - **Live Testing Modules:** Includes dedicated interface tabs for testing the Alternating Least Squares (ALS) recommendation outputs and running live inference on the fine-tuned ABSA model.
 
-<!-- TODO: Adjust the feature list to perfectly match the actual functionalities implemented in AdminDashboard.jsx / AbsaAnalytics.jsx / ProductClustering.jsx / ProductSearch.jsx. -->
-
 ## System Architecture
 
 ```mermaid
 flowchart LR
-    A[React Frontend] -->|REST API| B[Node.js / Express Gateway]
-    B -->|Proxy request| C[Flask AI Server]
-    C -->|Inference| D[PhoBERT Sentiment Model]
-    C -->|Recommend| E[ALS Collaborative Filtering]
-    C -->|Clustering| F[K-Means + PhoBERT Embeddings]
-    B -->|CRUD| G[(MongoDB)]
-    C -->|Log interaction| G
+    A[React Frontend] -->|REST API (Port 5000)| B[Flask AI Server]
+    A -.->|Standard CRUD (Port 5001)| C[Node.js Backend]
+
+    B -->|Aspect Extraction| D[Gemini LLM API]
+    B -->|Sentiment Inference| E[PhoBERT Models]
+    B -->|Predictive Scoring| F[ALS Recommendation Model]
+    
+    B <-->|Product Search & Text Indexing| G[(MongoDB)]
+    C <-->|Data Management| G
 
 ```
 
