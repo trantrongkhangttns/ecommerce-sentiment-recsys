@@ -51,14 +51,14 @@ As a result, the accompanying web application and backend gateway are implemente
 
 ```mermaid
 flowchart LR
-    A[React Frontend] -->|REST API (Port 5000)| B[Flask AI Server]
-    A -.->|Standard CRUD (Port 5001)| C[Node.js Backend]
+    A[React Frontend] -->|REST API Port 5000| B[Flask AI Server]
+    A -.->|Standard CRUD Port 5001| C[Node.js Backend]
 
     B -->|Aspect Extraction| D[Gemini LLM API]
     B -->|Sentiment Inference| E[PhoBERT Models]
     B -->|Predictive Scoring| F[ALS Recommendation Model]
     
-    B <-->|Product Search & Text Indexing| G[(MongoDB)]
+    B <-->|Search and Indexing| G[(MongoDB)]
     C <-->|Data Management| G
 
 ```
