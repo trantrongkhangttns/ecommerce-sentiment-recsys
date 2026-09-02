@@ -6,8 +6,8 @@ This project was developed to build an end-to-end Machine Learning solution that
 The models were trained and evaluated on a custom dataset of approximately 13,490 authentic Vietnamese reviews scraped directly from Shopee.
 ![Demo](assets/demo.png)
 
+## Demo
 <img width="1856" height="1042" alt="image" src="https://github.com/user-attachments/assets/83228693-2728-4911-aaaf-41a2e6eca311" />
-
 
 ---
 
