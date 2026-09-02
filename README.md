@@ -2,9 +2,7 @@
 
 > An E-commerce Customer Sentiment Analysis System for the Vietnamese market, utilizing a fine-tuned PhoBERT model on Shopee review data.
 
-This project was developed to build an end-to-end Machine Learning solution that addresses core e-commerce challenges: extracting actionable insights from unstructured customer feedback and personalizing product discovery.
-The models were trained and evaluated on a custom dataset of approximately 13,490 authentic Vietnamese reviews scraped directly from Shopee.
-![Demo](assets/demo.png)
+This project was developed to build an end-to-end Machine Learning solution that addresses core e-commerce challenges: extracting actionable insights from unstructured customer feedback and personalizing product discovery. The models were trained and evaluated on a custom dataset of approximately 13,490 authentic Vietnamese reviews scraped directly from Shopee.
 
 ## Demo
 <img width="1856" height="1042" alt="image" src="https://github.com/user-attachments/assets/83228693-2728-4911-aaaf-41a2e6eca311" />
@@ -14,6 +12,7 @@ The models were trained and evaluated on a custom dataset of approximately 13,49
 ## Table of Contents
 
 - [Overview](#overview)
+- [Project Scope & Limitations](#project-scope--limitations)
 - [Key Features](#key-features)
 - [System Architecture](#system-architecture)
 - [Technologies Used](#technologies-used)
@@ -33,6 +32,12 @@ This system collects and analyzes customer reviews on Shopee, providing administ
 - Perform Aspect-Based Sentiment Analysis (ABSA) across different product dimensions.
 - Cluster products based on review topics and semantic similarities.
 - Search and recommend products based on user interaction behavior.
+
+## Project Scope & Limitations
+
+Please note that this repository serves primarily as an exploratory research project and a proof-of-concept. The primary focus of this architecture is on the design and integration of the Machine Learning pipelines. 
+
+As a result, the accompanying web application and backend gateway are implemented solely to demonstrate end-to-end functionality. They are not optimized for production-grade scalability, security, or advanced error handling. Reviewers may encounter exploratory code, unoptimized infrastructure, or redundancies typical of an academic research environment.
 
 ## Key Features
 
