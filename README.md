@@ -66,14 +66,14 @@ flowchart LR
 ## Technologies Used
 
 | Component | Technology |
-| --- | --- |
-| Frontend | React, Vite |
-| Backend Gateway | Node.js, Express |
-| AI Server | Flask, Python |
-| NLP Model | PhoBERT (vinai/phobert-base-v2), fine-tuned |
-| Recommendation | ALS Collaborative Filtering |
-| Clustering | K-Means + PhoBERT semantic embeddings |
-| Database | MongoDB |
+|---|---|
+| **NLP Model** | PhoBERT (`vinai/phobert-base-v2`), fine-tuned |
+| **Recommendation** | ALS Collaborative Filtering |
+| **Clustering** | K-Means + PhoBERT semantic embeddings |
+| **AI Server** | Flask `[version?]`, Python 3.x |
+| **Database** | MongoDB (Mongoose `^9.7.4`) |
+| **Backend Gateway** | Node.js, Express `^5.2.1` |
+| **Frontend UI** | React `[version?]`, Vite `[version?]` |
 
 ## Directory Structure
 
