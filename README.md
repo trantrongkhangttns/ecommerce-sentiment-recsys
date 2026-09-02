@@ -41,11 +41,11 @@ As a result, the accompanying web application and backend gateway are implemente
 
 ## Key Features
 
-- **Sentiment Analysis:** A fine-tuned PhoBERT model classifies reviews into positive/negative sentiments with high accuracy.
-- **ABSA Analytics:** Analyzes sentiment based on specific product aspects (e.g., price, quality, delivery).
-- **Product Clustering:** Clusters products using PhoBERT semantic embeddings combined with K-Means.
-- **Product Search & Recommendation:** Features a product search engine integrated with Alternating Least Squares (ALS) collaborative filtering for tailored recommendations.
-- **Admin Dashboard:** A management interface that aggregates metrics, visualizes data through charts, and logs user interactions.
+- **System Overview Dashboard:** A central management interface tracking core system metrics, including total products in the catalog, active users, total implicit interactions, and overall review volume.
+- **ABSA Analytics & Evidence Tracking:** Visualizes sentiment distribution (Positive, Neutral, Negative, None) across 5 specific product aspects: Quality, Price, Delivery, Packaging, and Service. Includes an evidence extraction modal to investigate the raw negative reviews driving the metrics.
+- **Product Issue Clustering:** Utilizes PhoBERT and K-Means to automatically group negative reviews for specific products into distinct thematic clusters. It extracts key phrases and provides sample reviews for rapid root-cause analysis.
+- **Interactive Product Search & Interaction Logging:** A storefront simulation that allows administrators to search the product catalog and view details. It actively logs simulated user behaviors (e.g., `click_view` events tied to a `User_ID`) to dynamically feed the implicit feedback matrix required by the ALS recommendation engine.
+- **Live Testing Modules:** Includes dedicated interface tabs for testing the Alternating Least Squares (ALS) recommendation outputs and running live inference on the fine-tuned ABSA model.
 
 <!-- TODO: Adjust the feature list to perfectly match the actual functionalities implemented in AdminDashboard.jsx / AbsaAnalytics.jsx / ProductClustering.jsx / ProductSearch.jsx. -->
 
