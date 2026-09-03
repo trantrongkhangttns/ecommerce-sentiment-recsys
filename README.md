@@ -130,7 +130,7 @@ cp .env.example .env
 
 ### 3. Download Fine-Tuned Models
 
-Due to GitHub's storage limits, the fine-tuned PhoBERT models are hosted externally at: `<Google Drive/HuggingFace Link>`
+Due to GitHub's storage limits, the fine-tuned PhoBERT models are hosted externally at: `[<Google Drive/HuggingFace Link>](https://drive.google.com/file/d/1Lb0psT1bWDghCnCxCY6Ave1Rhl183r6B/view?usp=sharing)`
 
 Download and place them inside the `models/` directory.
 
