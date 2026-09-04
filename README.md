@@ -164,12 +164,24 @@ npm run dev
 
 ## Main APIs
 
+The core machine learning and data processing endpoints are served directly via the Flask backend (Port 5000):
+
+### Machine Learning & AI
 | Method | Endpoint | Description |
-| --- | --- | --- |
-| POST | `/api/sentiment/analyze` | Analyzes the sentiment of a single review |
-| POST | `/api/log_interaction` | Logs user interaction behavior |
-| GET | `/api/products/search` | Searches for products |
-| GET | `/api/products/clusters` | Retrieves product clustering results |
+|---|---|---|
+| `POST` | `/api/analyze-absa` | **ABSA Pipeline:** Extracts product aspects via Gemini LLM and infers sentiment (Positive, Neutral, Negative, None) using fine-tuned PhoBERT models. |
+| `GET` | `/api/recommend` | **Recommender:** Returns personalized product rankings using the ALS model. Implements popularity-based fallback for cold-start users. |
+| `POST` | `/api/analyze` | **Quick Inference:** Legacy endpoint for fast sentiment inference on predefined core aspects (Quality, Price, Delivery) without LLM extraction. |
+
+### System & Data Retrieval
+| Method | Endpoint | Description |
+|---|---|---|
+| `GET` | `/api/dashboard` | **Metrics Aggregation:** Calculates total reviews, ALS sparsity, and formats K-Means clustering data for the Admin Dashboard. |
+| `GET` | `/api/evidence/<aspect>` | **Root-Cause Analysis:** Retrieves and samples raw negative reviews from the dataset for a specific aspect to provide evidence. |
+| `GET` | `/api/products/search` | **Search Engine:** Performs MongoDB `$text` search and ranks product results based on algorithmic text-match scoring. |
+| `POST` | `/api/log` | **Interaction Tracking:** Logs simulated user behavior (e.g., `click_view`) to populate the implicit feedback matrix. |
+
+> *Note: The Node.js gateway (Port 5001) manages standard e-commerce CRUD operations (e.g., `/api/v1/recommendations` routes) and operates independently of the AI inference pipeline.*
 
 ## Model Performance
 
