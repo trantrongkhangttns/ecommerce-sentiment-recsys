@@ -194,8 +194,13 @@ The core machine learning and data processing endpoints are served directly via 
 
 ## Future Enhancements
 
-* Expand towards multimodal sentiment analysis (e.g., combining rating embeddings with textual data).
-* Improve the recommendation engine by integrating content-based filtering techniques.
+Expand toward multimodal sentiment analysis by combining text with product images.
+
+Transition from ALS to deep learning recommendation models like Neural Collaborative Filtering (NCF).
+
+Implement Redis caching to optimize MongoDB text search and Dashboard aggregation response times.
+
+Containerize the machine learning pipelines and APIs using Docker for streamlined deployment.
 
 ---
 
