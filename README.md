@@ -70,10 +70,10 @@ flowchart LR
 | **NLP Model** | PhoBERT (`vinai/phobert-base-v2`), fine-tuned |
 | **Recommendation** | ALS Collaborative Filtering |
 | **Clustering** | K-Means + PhoBERT semantic embeddings |
-| **AI Server** | Flask `[version?]`, Python 3.x |
+| **AI Server** | Flask 3.x, Python 3.10+ |
 | **Database** | MongoDB (Mongoose `^9.7.4`) |
 | **Backend Gateway** | Node.js, Express `^5.2.1` |
-| **Frontend UI** | React `[version?]`, Vite `[version?]` |
+| **Frontend UI** | React 18.x, Vite 5.x |
 
 ## Directory Structure
 
