@@ -185,10 +185,12 @@ The core machine learning and data processing endpoints are served directly via 
 
 ## Model Performance
 
-| Model | Accuracy | F1-macro |
-| --- | --- | --- |
-| PhoBERT (fine-tuned) | 95.7% | 0.954 |
-| SVC + TF-IDF (baseline) | — | ~0.735 |
+| Model | Accuracy (Average) | F1-macro (Average) |
+|---|---|---|
+| PhoBERT (Fine-tuned ABSA) | 87.37% | 0.654 |
+| SVC + TF-IDF (Baseline) | — | ~0.735 |
+
+> *Note: PhoBERT metrics represent the macro-average scores across 5 independent aspect-specific models. Performance varies significantly by aspect (e.g., F1-macro of 0.721 for `Price` vs. 0.526 for `Service`) due to extreme class imbalances in the authentic Shopee review dataset.*
 
 ## Future Enhancements
 
