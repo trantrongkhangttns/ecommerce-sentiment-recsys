@@ -1,5 +1,9 @@
 # Shopee Customer Sentiment Analysis Dashboard
+![Python](https://img.shields.io/badge/Python-3.13+-blue.svg)
 
+![React](https://img.shields.io/badge/React-18.x-61DAFB.svg)
+
+![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)
 > An E-commerce Customer Sentiment Analysis System for the Vietnamese market, utilizing a fine-tuned PhoBERT model on Shopee review data.
 
 This project was developed to build an end-to-end Machine Learning solution that addresses core e-commerce challenges: extracting actionable insights from unstructured customer feedback and personalizing product discovery. The models were trained and evaluated on a custom dataset of approximately 13,490 authentic Vietnamese reviews scraped directly from Shopee.
