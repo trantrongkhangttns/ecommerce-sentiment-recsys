@@ -128,11 +128,13 @@ cp .env.example .env
 
 ```
 
-### 3. Download Fine-Tuned Models
+### 3. Download Models & System Checkpoints
 
-Due to GitHub's storage limits, the fine-tuned PhoBERT models are hosted externally at: `[<Google Drive/HuggingFace Link>](https://drive.google.com/file/d/1Lb0psT1bWDghCnCxCY6Ave1Rhl183r6B/view?usp=sharing)`
+Due to GitHub's storage limits, the fine-tuned PhoBERT models and ALS matrices are hosted externally.
 
-Download and place them inside the `models/` directory.
+* **[Download from Google Drive](https://drive.google.com/file/d/1Lb0psT1bWDghCnCxCY6Ave1Rhl183r6B/view?usp=sharing)**
+
+**Installation Note:** Download the `.zip` file and extract its contents directly into the `models/` directory at the root of the project. Ensure there are no nested folders (e.g., `models/models/...`) so the Flask API can locate the paths correctly.
 
 ### 4. Install & Run the Flask AI Server
 
